@@ -1,4 +1,4 @@
-import { Button, Overlay, Title } from "@mantine/core";
+import { Button, Title } from "@mantine/core";
 import classes from "./Home.style.module.css";
 import { Link } from "react-router";
 import logoUni from "/src/assets/logos/logouni.png";
@@ -13,11 +13,6 @@ const HomePage = () => {
           "flex flex-col max-w-5xl items-center justify-items-center mx-auto mt-16 w-11/12"
         }
       >
-        <Overlay
-          gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
-          opacity={0.25}
-          zIndex={0}
-        />
         <div className="w-full flex flex-col justify-center items-start p-4 md:flex-row">
           <div className="flex flex-col justify-center items-start w-11/12">
             <Title className="text-white">
