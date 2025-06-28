@@ -1,12 +1,12 @@
 import { Button, Overlay, Title } from "@mantine/core";
 import classes from "./Home.style.module.css";
-
+import { Link } from "react-router";
 const HomePage = () => {
   return (
-    <div className={classes.hero + " " + "flex flex-col h-screen"}>
+    <div className={classes.hero + " " + "flex flex-col h-full"}>
       <section
         className={
-          "flex flex-col max-w-5xl items-center justify-items-center mx-auto mt-22 px-16"
+          "flex flex-col max-w-5xl items-center justify-items-center mx-auto mt-16 px-16"
         }
       >
         <Overlay
@@ -14,25 +14,27 @@ const HomePage = () => {
           opacity={0.25}
           zIndex={0}
         />
-        <div className="flex flex-col justify-center items-start">
-          <Title className="text-white">
-            ANTE-PROJECTO:{" "}
-            <span className="text-blue-400">CALCULO INTEGRAL</span>
-          </Title>
-          <Title className="text-white">
-            Análisis De Consumo De Recursos Acumulados En Servidores
-          </Title>
+        <div className="w-full flex flex-col justify-center items-start p-4 md:flex-row">
+          <div className="flex flex-col justify-center items-start w-11/12">
+            <Title className="text-white">
+              ANTE-PROJECTO:{" "}
+              <span className="text-blue-400">CALCULO INTEGRAL</span>
+            </Title>
+            <Title className="text-white">
+              Análisis De Consumo De Recursos Acumulados En Servidores
+            </Title>
+          </div>
+
+          <img
+            className="w-11/12 mt-12 md:w-5/12"
+            src="/src/assets/logos/logouni.png"
+            alt="unilogo"
+          />
         </div>
 
-        <img
-          className="w-full max-w-3xl bg-white rounded-2xl mt-12"
-          src="/src/assets/logos/logouni.png"
-          alt="unilogo"
-        />
-
-        <div className="flex flex-col mt-12">
+        <div className="flex flex-col mt-12 border-t border-t-blue-300 p-4">
           <Title className="text-white">OBJETIVO:</Title>
-          <p className="text-white mt-4 font-bold text-xl bg-black p-4">
+          <p className="text-white mt-4 font-bold text-xl">
             Estudiar el consumo acumulado de recursos (CPU, memoria,
             almacenamiento y red) en los servidores, identificando sus patrones
             de uso, optimizando su rendimiento y mejorando la planificación de
@@ -44,9 +46,23 @@ const HomePage = () => {
           </p>
         </div>
 
-        <Button variant="gradient" size="xl" radius="xl">
-          Empezemos!
-        </Button>
+        <div className="flex flex-col mt-12 border-t border-t-blue-300 p-4 w-full">
+          <p className="text-white mt-4 font-bold text-xl">
+            PROFESOR: MANUEL FEREIRA
+          </p>
+          <p className="text-white mt-4 font-bold text-xl">ALUMNOS:</p>
+          <ul className="text-white mt-4 font-bold text-sm flex justify-around">
+            <li>Bryan Sanabria CI:31.708.535</li>
+            <li>Nestor Rincón CI:31.851.379</li>
+            <li>Neville Gairy CI:30.250.460</li>
+          </ul>
+        </div>
+
+        <Link to="/metrics">
+          <Button className="my-8" variant="gradient" size="xl" radius="xl">
+            Empecemos!
+          </Button>
+        </Link>
       </section>
     </div>
   );
