@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="w-full flex flex-col justify-center items-start p-4 md:flex-row">
           <div className="flex flex-col justify-center items-start w-11/12">
             <Title className="text-white">
-              ANTE-PROJECTO:{" "}
+              ANTE-PROYECTO:{" "}
               <span className="text-blue-400">CALCULO INTEGRAL</span>
             </Title>
             <Title className="text-white">
