@@ -5,10 +5,12 @@ import logoUni from "/src/assets/logos/logouni.png";
 
 const HomePage = () => {
   return (
-    <div className={classes.hero + " " + "flex flex-col h-full"}>
+    <div
+      className={classes.hero + " " + "flex flex-col h-full w-full lg:h-screen"}
+    >
       <section
         className={
-          "flex flex-col max-w-5xl items-center justify-items-center mx-auto mt-16 px-16"
+          "flex flex-col max-w-5xl items-center justify-items-center mx-auto mt-16 w-11/12"
         }
       >
         <Overlay
@@ -48,7 +50,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex flex-col mt-12 border-t border-t-blue-300 p-4 w-full">
+        <div className="flex flex-col mt-8 border-t border-t-blue-300 p-4 w-full">
           <p className="text-white mt-4 font-bold text-xl">
             PROFESOR: MANUEL FEREIRA
           </p>
