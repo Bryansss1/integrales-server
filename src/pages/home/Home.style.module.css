@@ -1,0 +1,10 @@
+@import "tailwindcss";
+.hero {
+  background-image: url("/src/assets/backgrounds/newbackground.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sub_title {
+  margin-top: 8rem;
+}
