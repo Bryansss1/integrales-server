@@ -1,6 +1,8 @@
 import { Button, Overlay, Title } from "@mantine/core";
 import classes from "./Home.style.module.css";
 import { Link } from "react-router";
+import logoUni from "/src/assets/logos/logouni.png";
+
 const HomePage = () => {
   return (
     <div className={classes.hero + " " + "flex flex-col h-full"}>
@@ -27,7 +29,7 @@ const HomePage = () => {
 
           <img
             className="w-11/12 mt-12 md:w-5/12"
-            src="/src/assets/logos/logouni.png"
+            src={logoUni}
             alt="unilogo"
           />
         </div>
